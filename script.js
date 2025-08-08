@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const allMatches = [
+        // Group Stage
         { match: 1, date: '9 Sep', day: 'Mon', start: '6 PM', venue: 'Abu Dhabi', team1: 'Oman', team2: 'UAE' },
         { match: 2, date: '10 Sep', day: 'Tue', start: '6 PM', venue: 'Dubai', team1: 'India', team2: 'Pakistan' },
         { match: 3, date: '11 Sep', day: 'Wed', start: '6 PM', venue: 'Abu Dhabi', team1: 'Sri Lanka', team2: 'Hong Kong' },
@@ -34,12 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { match: 10, date: '17 Sep', day: 'Tue', start: '6 PM', venue: 'Dubai', team1: 'Pakistan', team2: 'UAE' },
         { match: 11, date: '18 Sep', day: 'Wed', start: '6 PM', venue: 'Abu Dhabi', team1: 'Sri Lanka', team2: 'Bangladesh' },
         { match: 12, date: '19 Sep', day: 'Thu', start: '6 PM', venue: 'Abu Dhabi', team1: 'Afghanistan', team2: 'Hong Kong' },
+
+        // Super Four Stage
         { match: 13, date: '20 Sep', day: 'Fri', start: '6 PM', venue: 'Dubai', team1: 'B1', team2: 'B2' },
         { match: 14, date: '21 Sep', day: 'Sat', start: '6 PM', venue: 'Dubai', team1: 'A1', team2: 'A2' },
         { match: 15, date: '23 Sep', day: 'Mon', start: '6 PM', venue: 'Abu Dhabi', team1: 'A2', team2: 'B1' },
         { match: 16, date: '24 Sep', day: 'Tue', start: '6 PM', venue: 'Dubai', team1: 'A1', team2: 'B2' },
         { match: 17, date: '25 Sep', day: 'Wed', start: '6 PM', venue: 'Dubai', team1: 'A2', team2: 'B2' },
         { match: 18, date: '26 Sep', day: 'Thu', start: '6 PM', venue: 'Dubai', team1: 'A1', team2: 'B1' },
+
+        // Final
         { match: 19, date: '28 Sep', day: 'Sat', start: '6 PM', venue: 'Dubai', team1: 'Finalist 1', team2: 'Finalist 2' }
     ];
 
@@ -63,9 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.filterSchedule = function(teamName) {
         const filteredMatches = allMatches.filter(match => 
-            match.team1.includes(teamName) || match.team2.includes(teamName) || 
-            match.team1.includes('A') || match.team1.includes('B') || match.team2.includes('A') || match.team2.includes('B') || 
-            match.team1.includes('Finalist')
+            match.team1.includes(teamName) || match.team2.includes(teamName)
         );
         renderSchedule(filteredMatches);
         showSection('schedule-section');
