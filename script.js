@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scheduleTableBody = document.querySelector('#match-table tbody');
     const sections = document.querySelectorAll('.content-section');
 
-    const m3u8Link = 'YOUR_M3U8_LINK_HERE';
+    const m3u8Link = 'http://sample.vodobox.net/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8';
 
     function loadLiveStream() {
         if (Hls.isSupported()) {
@@ -97,3 +97,4 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSchedule(allMatches);
     showSection('schedule-section');
 });
+
