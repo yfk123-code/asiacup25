@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Cup 2025 Live Stream</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">Asia Cup 2025</h1>
+            <nav class="main-nav">
+                <button class="nav-button" onclick="showSection('schedule-section')">View Schedule</button>
+                <button class="nav-button" onclick="showSection('live-section')">Watch Live</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="hero-section">
+            <div class="hero-text">
+                <h2>ASIA CUP 2025</h2>
+                <h3>Experience The Excitement</h3>
+                <p>9 September - 28 September 2025</p>
+            </div>
+        </section>
+
+        <div class="ad-space">
+            <p>Ad Space (Adsterra Banner)</p>
+        </div>
+
+        <section id="team-logos" class="content-section">
+            <h4 class="click-info">Click on a team logo to view their match schedule</h4>
+            <div class="team-group">
+                <h5 class="group-name">Group A</h5>
+                <div class="logo-container">
+                    <img src="https://i.postimg.cc/X75mkbJk/India.png" alt="India" class="team-logo" onclick="filterSchedule('India')">
+                    <img src="https://i.postimg.cc/7L5gSxPx/Pakistan.png" alt="Pakistan" class="team-logo" onclick="filterSchedule('Pakistan')">
+                    <img src="https://i.postimg.cc/4xb0jQpK/uae.png" alt="UAE" class="team-logo" onclick="filterSchedule('UAE')">
+                    <img src="https://i.postimg.cc/4NnNfnWN/oman.png" alt="Oman" class="team-logo" onclick="filterSchedule('Oman')">
+                </div>
+            </div>
+            <div class="team-group">
+                <h5 class="group-name">Group B</h5>
+                <div class="logo-container">
+                    <img src="https://i.postimg.cc/wjmqNZKC/Bangladesh.png" alt="Bangladesh" class="team-logo" onclick="filterSchedule('Bangladesh')">
+                    <img src="https://i.postimg.cc/R0xMLd4N/sri-lanka.png" alt="Sri Lanka" class="team-logo" onclick="filterSchedule('Sri Lanka')">
+                    <img src="https://i.postimg.cc/FHMtQHBq/Afghanistan.png" alt="Afghanistan" class="team-logo" onclick="filterSchedule('Afghanistan')">
+                    <img src="https://i.postimg.cc/2y8Mxb1q/hong-kong.png" alt="Hong Kong" class="team-logo" onclick="filterSchedule('Hong Kong')">
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule-section" class="content-section active">
+            <h2 class="section-title">Match Schedule</h2>
+            <div class="table-container">
+                <table id="match-table">
+                    <thead>
+                        <tr>
+                            <th>Match</th>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Start</th>
+                            <th>Venue</th>
+                            <th>Team 1</th>
+                            <th>Team 2</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="live-section" class="content-section hidden">
+            <h2 class="section-title">Live Match</h2>
+            <div class="ad-space-player-top">
+                <p>Adsterra Banner Ad Here</p>
+            </div>
+            <div class="video-container">
+                <video id="liveVideo" controls></video>
+            </div>
+            <div class="ad-space-player-bottom">
+                <p>Adsterra Banner Ad Here</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Asia Cup. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
