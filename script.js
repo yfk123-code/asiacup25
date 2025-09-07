@@ -23,19 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const allMatches = [
         // Group Stage
-        { match: 1, date: '9 Sep', day: 'Mon', start: '6 PM', venue: 'Abu Dhabi', team1: 'Oman', team2: 'UAE' },
-        { match: 2, date: '10 Sep', day: 'Tue', start: '6 PM', venue: 'Dubai', team1: 'India', team2: 'Pakistan' },
-        { match: 3, date: '11 Sep', day: 'Wed', start: '6 PM', venue: 'Abu Dhabi', team1: 'Sri Lanka', team2: 'Hong Kong' },
-        { match: 4, date: '12 Sep', day: 'Thu', start: '6 PM', venue: 'Dubai', team1: 'Bangladesh', team2: 'Afghanistan' },
-        { match: 5, date: '13 Sep', day: 'Fri', start: '6 PM', venue: 'Abu Dhabi', team1: 'UAE', team2: 'India' },
-        { match: 6, date: '14 Sep', day: 'Sat', start: '6 PM', venue: 'Dubai', team1: 'Pakistan', team2: 'Oman' },
-        { match: 7, date: '15 Sep', day: 'Sun', start: '4 PM', venue: 'Abu Dhabi', team1: 'Hong Kong', team2: 'Bangladesh' },
-        { match: 8, date: '15 Sep', day: 'Sun', start: '6 PM', venue: 'Dubai', team1: 'Afghanistan', team2: 'Sri Lanka' },
-        { match: 9, date: '16 Sep', day: 'Mon', start: '6 PM', venue: 'Abu Dhabi', team1: 'India', team2: 'Oman' },
-        { match: 10, date: '17 Sep', day: 'Tue', start: '6 PM', venue: 'Dubai', team1: 'Pakistan', team2: 'UAE' },
-        { match: 11, date: '18 Sep', day: 'Wed', start: '6 PM', venue: 'Abu Dhabi', team1: 'Sri Lanka', team2: 'Bangladesh' },
-        { match: 12, date: '19 Sep', day: 'Thu', start: '6 PM', venue: 'Abu Dhabi', team1: 'Afghanistan', team2: 'Hong Kong' },
-
+        { match: 1, date: '9 Sep', day: 'Mon', start: '8 PM', venue: 'Abu Dhabi', team1: 'Afghanistan', team2: 'Hong Kong' },
+        { match: 2, date: '10 Sep', day: 'Tue', start: '8 PM', venue: 'Dubai', team1: 'India', team2: 'UAE' },
+        { match: 3, date: '11 Sep', day: 'Wed', start: '8 PM', venue: 'Abu Dhabi', team1: 'Bangladesh', team2: 'Hong Kong' },
+        { match: 4, date: '12 Sep', day: 'Thu', start: '8 PM', venue: 'Dubai', team1: 'Pakistan', team2: 'Oman' },
+        { match: 5, date: '13 Sep', day: 'Fri', start: '6 PM', venue: 'Abu Dhabi', team1: 'Bangladesh', team2: 'Sri Lanka' },
+        { match: 6, date: '14 Sep', day: 'Sat', start: '8 PM', venue: 'Dubai', team1: 'India', team2: 'Pakistan' },
+        { match: 7, date: '15 Sep', day: 'Sun', start: '4 PM', venue: 'Abu Dhabi', team1: 'UAE', team2: 'Oman' },
+        { match: 8, date: '15 Sep', day: 'Sun', start: '8 PM', venue: 'Dubai', team1: 'Hong Kong', team2: 'Sri Lanka' },
+        { match: 9, date: '16 Sep', day: 'Mon', start: '8 PM', venue: 'Abu Dhabi', team1: 'Bangladesh', team2: 'Afghanistan' },
+        { match: 10, date: '17 Sep', day: 'Tue', start: '8 PM', venue: 'Dubai', team1: 'Pakistan', team2: 'UAE' },
+        { match: 11, date: '18 Sep', day: 'Wed', start: '8 PM', venue: 'Abu Dhabi', team1: 'Sri Lanka', team2: 'Afghanistan' },
+        { match: 12, date: '19 Sep', day: 'Thu', start: '8 PM', venue: 'Abu Dhabi', team1: 'India', team2: 'Oman' },
+       
         // Super Four Stage
         { match: 13, date: '20 Sep', day: 'Fri', start: '6 PM', venue: 'Dubai', team1: 'B1', team2: 'B2' },
         { match: 14, date: '21 Sep', day: 'Sat', start: '6 PM', venue: 'Dubai', team1: 'A1', team2: 'A2' },
@@ -97,5 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSchedule(allMatches);
     showSection('schedule-section');
 });
+
 
 
