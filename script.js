@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scheduleTableBody = document.querySelector('#match-table tbody');
     const sections = document.querySelectorAll('.content-section');
 
-    const m3u8Link = 'https://cdnb4u.wiseplayout.com/B4U_Music/master.m3u8';
+    const m3u8Link = 'https://dai.google.com/linear/hls/event/2uQvHqZySCSh8lOGkJ1R-A/master.m3u8';
 
     function loadLiveStream() {
         if (Hls.isSupported()) {
@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSchedule(allMatches);
     showSection('schedule-section');
 });
+
 
 
 
